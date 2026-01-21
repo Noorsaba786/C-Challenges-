@@ -20,3 +20,4 @@ int main()
     printf("%%X : %X \n ", SecNum);
     printf("%%c : %c \n ", SecNum);
 }
+    

@@ -18,3 +18,4 @@ int SommeImpaire(int a, int b)
     // ex: SommeImpaire (3,9) = 3 + 5 + 7 + 9 = 24
     printf("La somme des entiers impairs entre %d et %d est : %d\n", a, b, somme);
 }
+
