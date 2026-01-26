@@ -1,4 +1,4 @@
-// Ecrire un nouveau programme (nouveau fichier) qui remplit un tableau de 200 case de valeurs entiérs aléatoires entre 10 et 99 . a l`aide d`une boucle for parcourez toutes les case et testez si la case i est infeieur a la suivante i+i . si ce n'est pas le cas inversez les deux case a la fin affichez le tableau vous verrez qu'il n'est pas tiez .
+// Ecrire un nouveau programme (nouveau fichier) qui remplit un tableau de 200 case de valeurs entiérs aléatoires entre 10 et 99 . a l`aide d`une boucle for parcourez toutes les case et testez si la case i est infeieur a la suivante i+1 . si ce n'est pas le cas inversez les deux case a la fin affichez le tableau vous verrez qu'il n'est pas tiez .
 /*
 
 void Q1()
