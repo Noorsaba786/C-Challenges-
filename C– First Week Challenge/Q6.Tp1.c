@@ -1,38 +1,40 @@
+// cree une programme qui affiche combien de jour comporte un mois donne pour le mois de fevrier soit 28 ou 29 jours  pour cela  on doit utiliser switch case
+
 #include <stdio.h>
 
 int main()
 {
-    int month;
 
-    printf("Entrez le numero du mois (1-12) : ");
+    int month;
+    printf("enter a month number (1- 12)  ");
     scanf("%d", &month);
 
     switch (month)
     {
-    case 1:  // Janvier
-    case 3:  // Mars
-    case 5:  // Mai
-    case 7:  // Juillet
-    case 8:  // Août
-    case 10: // Octobre
-    case 12: // Décembre
-        printf("Ce mois contient 31 jours.\n");
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+        printf("this month has 31 days");
         break;
 
-    case 4:  // Avril
-    case 6:  // Juin
-    case 9:  // Septembre
-    case 11: // Novembre
-        printf("Ce mois contient 30 jours.\n");
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+        printf("this month has 30 days");
         break;
 
-    case 2: // Février
-        printf("Ce mois contient 28 jours.\n");
+    case 2:
+        printf("this month has 29 or 28 days  days");
         break;
 
     default:
-        printf("Mois invalide ! Entrez un nombre entre 1 et 12.\n");
+        printf("invalid month ");
+        break;
     }
-
     return 0;
 }
