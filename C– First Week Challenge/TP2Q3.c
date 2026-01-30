@@ -31,9 +31,9 @@ int main()
 // modifiez le programme precedant de tellle sorte que le nombre e'etoiles d'une linge soit aussi donne par l'utilisateur la focntion ligne doit prendre un parametre entier qui correspond au nombre d'etoiles a afficher if faut pas utiliser de scanf dans la fonction ligne
 
 #include <stdio.h>
-void ligne(int stars)
+void ligne(int n)
 {
-    for (int i = 0; i < stars; i++)
+    for (int i = 0; i < n; i++)
     {
         printf("*");
     }
@@ -46,7 +46,7 @@ int main()
     scanf("%d", &n);
     printf("Enter a value for stars (number of stars per line): ");
     scanf("%d", &stars);
-    for (int i = 0; i < n; i++)
+    for (int i = 0; i < n; i++) 
     {
         ligne(stars);
     }
