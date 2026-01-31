@@ -3,7 +3,7 @@
 // 2 les moyennes par matiere
 // la meilleure note d'une matiere donne
 // la meilleure note du semestre avec l'etudiant et la matiere correspondante
-
+/*
 #include <stdio.h>
 
 void moyenneEtudiant(int notes[][100], int n, int m)
@@ -95,6 +95,93 @@ int main()
     meilleureNoteMatiere(notes, n, m, matiere - 1);
 
     meilleureNoteSemestre(notes, n, m);
+
+    return 0;
+}
+
+*/
+
+#include <stdio.h>
+
+float moyenneEtudiant(int i, int n, int m, float notes[n][m])
+{
+    float sum = 0;
+    for (int j = 0; j < m; j++)
+    {
+        sum += notes[i][j];
+    }
+    return sum / m;
+}
+
+float moyenneMatiere(int j, int n, int m, float notes[n][m])
+{
+    float sum = 0;
+    for (int i = 0; i < n; i++)
+    {
+        sum += notes[i][j];
+    }
+    return sum / n;
+}
+
+float MilleurNoteMatiere(int j, int n, int m, float notes[n][m])
+{
+    float max = notes[0][j];
+    for (int i = 0; i < n; i++)
+    {
+        if (notes[i][j] > max)
+        {
+            max = notes[i][j];
+        }
+    }
+    return max;
+}
+
+float milleureNoteSem(int n, int m, float notes[n][m], int *bestStudent, int *bestSubject)
+{
+
+    float max = notes[0][0];
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            if (notes[i][j] > max)
+            {
+                max = notes[i][j];
+                *bestStudent = i;
+                *bestSubject = j;
+            }
+        }
+    }
+    return max;
+}
+
+int main()
+{
+    int n, m;
+
+    printf("Saisir le nombre des etudiants:\n");
+    scanf("%d", &n);
+
+    printf("Saisir le nombre des matieres:\n");
+    scanf("%d", &m);
+
+    float notes[n][m];
+
+    for (int i = 0; i < n; i++)
+    {
+        for (int j = 0; j < m; j++)
+        {
+            printf("Saisir la note pour l'etudiant %d, matiere %d : ",
+                   i + 1, j + 1);
+            scanf("%f", &notes[i][j]);
+        }
+    }
+
+    for (int i = 0; i < n; i++)
+    {
+        float avg = moyenneEtudiant(i, n, m, notes);
+        printf("Moyenne de l'etudiant %d = %.2f\n", i + 1, avg);
+    }
 
     return 0;
 }
