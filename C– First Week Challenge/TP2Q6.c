@@ -5,7 +5,9 @@ void triBulles(int tab[], int taille)
 
     for (int j = 0; j < taille; j++)
     {
-        for (int i = 0; i < taille - j - 1; i++)
+        for (int i = 0; i < taille - j - 1; i++)  // iteration 1 :  j = 0  size (taille) = 7    7 - 0 - 1 = 6:    => max last  [4, 2, 4, 1, 4, 1, 3]
+                                                     //    [4, 2, 4, 1, 4, 1, 4]
+                                                  // itertation 2 :  7 -1 - 1 = 5  = [4, 2, 4, 1, 4, 1, 4]
         {
             if (tab[i] > tab[i + 1])
             {

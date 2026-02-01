@@ -31,4 +31,3 @@ int main()
 
     return 0;
 }
-// Q2 : Ecrivez une fonction recursive int somme (int n) qui calcule la somme des n premiers entiers positifs (n compris) . verifez son fonctionnement dans
