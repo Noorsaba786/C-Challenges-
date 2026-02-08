@@ -1,11 +1,11 @@
 // Stracture de donnes et pointeurs  ,  des date
-// Q1 : Definissez un type enum jour pour defenir chque jour de la semaine .
+// Q1 : Definissez un type enum jour pour defenir chque jour de la semaine . 
+// Q2 : faites la meme chose pour les mois de l'annee .
+// Q3  : definissez un type structure date pour repecter une date comportant un jour , un numero de jour dans le mois , un mois   
 
-#include <stdio.h>
-#include <string.h>
 
-typedef enum
-{
+typedef jour = {
+
     Lundi,
     Mardi,
     Mercredi,
@@ -13,39 +13,14 @@ typedef enum
     Vendredi,
     Samedi,
     Dimanche
-} Jour;
+}
 
-int main()
-{
-    Jour today = Mercredi;
 
-    switch (today)
-    {
-    case Lundi:
-        printf("Aujourd'hui, c'est Lundi.\n");
-        break;
-    case Mardi:
-        printf("Aujourd'hui, c'est Mardi.\n");
-        break;
-    case Mercredi:
-        printf("Aujourd'hui, c'est Mercredi.\n");
-        break;
-    case Jeudi:
-        printf("Aujourd'hui, c'est Jeudi.\n");
-        break;
-    case Vendredi:
-        printf("Aujourd'hui, c'est Vendredi.\n");
-        break;
-    case Samedi:
-        printf("Aujourd'hui, c'est Samedi.\n");
-        break;
-    case Dimanche:
-        printf("Aujourd'hui, c'est Dimanche.\n");
-        break;
-    default:
-        printf("Jour inconnu.\n");
-        break;
-    }
+typedef mois = {
 
-    return 0;
+
+     janvier , 
+     fevrier , 
+     mars , 
+     
 }
