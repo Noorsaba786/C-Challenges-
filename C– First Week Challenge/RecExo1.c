@@ -33,13 +33,13 @@ int facto(int num)
 
     else
     {
-        int result = num * facto(num - 1);
+      num * facto(num - 1);
     }
 }
 int main()
 {
-    int result;
-    facto(5);
+
+    int result = facto(5);
     printf("The result is  %d ", result);
     return 0;
 }

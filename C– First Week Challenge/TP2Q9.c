@@ -31,3 +31,6 @@ int main()
 
         scanf("%d", &arr[i]);
     }
+
+
+    minIndex = findMinIndex(arr, n, 0, 0);

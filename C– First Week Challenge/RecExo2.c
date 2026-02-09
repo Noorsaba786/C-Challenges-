@@ -20,7 +20,16 @@ int fact(int num)
 
 int main()
 {
+    /*
     int result = fact(5);
-    printf("factorial 5 is = %d ", result);
-    return 0;
+     printf("factorial 5 is = %d ", result);
+     return 0;
+    */
+    int num;
+    int result;
+    printf("enter a num to find the fac");
+    scanf("%d", &num);
+
+    result = fact(num);
+    printf("the reseult is %d", result);
 }
