@@ -34,3 +34,7 @@ int main()
 
 
     minIndex = findMinIndex(arr, n, 0, 0);
+
+
+
+}

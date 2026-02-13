@@ -6,7 +6,7 @@ int minIndex(int *arr, int size)
     int min = 0;
     for (int i = 1; i < size; i++)
     {
-        if (*(arr + i) < *(arr + min)) 
+        if (*(arr + i) < *(arr + min))
             min = i;
     }
     return min;
