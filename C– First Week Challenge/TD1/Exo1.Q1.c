@@ -1,15 +1,47 @@
 // Ecrire une fonction "SommeImpair"qui fait la somme des termes impairs compris entre deux entiers fournis en paramètre.
 #include <stdio.h>
 
-int SommeImpair(int a, int b)
+/*
+int sommeImpair(int a, int b)
 {
     int sum = 0;
-    for (int i = a; i <= b; i++)
+
+    for (int i = a; i < b; i++)
     {
         if (i % 2 != 0)
-        {             // Vérifie si le nombre est impair
-            sum += i; // Ajoute le nombre impair à la somme
+        {
+            sum += i;
         }
     }
     return sum;
+}
+
+int main()
+{
+    printf("%d\n", sommeImpair(2, 10));
+}
+
+
+*/
+
+int sommeImpair(int a, int b)
+{
+    int result = 0;
+    int *p;
+    p = &result;
+
+    for (int i = a; i <= b; i++)
+    {
+        if (i % 2 != 0)
+        {
+
+            *p += i;
+        }
+    }
+    return result;
+}
+
+int main()
+{
+    printf("somme impair %d\n", sommeImpair(2, 7));
 }
