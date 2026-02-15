@@ -22,9 +22,9 @@ int affiche(int *a, int *b, int *c)
     printf("the value of c is  %d \n \n", *c);
 
     printf("Adress \n ");
-    printf("the address of a is  %d \n", a);
-    printf("the adress of b is  %d \n", b);
-    printf("the adress of c is  %d \n", c);
+    printf("the address of a is  %p \n", (void *)a);
+    printf("the adress of b is  %p \n", (void *)b);
+    printf("the adress of c is  %p \n", (void *)c);
 }
 
 int main()

@@ -6,6 +6,4 @@ int main()
     int b = 11;
     int *p;
     p = &a;
-
-    P
 }
