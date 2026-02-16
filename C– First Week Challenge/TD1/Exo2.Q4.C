@@ -7,6 +7,8 @@ void affiche(int tab[])
 
     printf("the values are %d \n", *p + 3);
     printf("the values are %d \n", *(p + 3));
+    printf("the values are %d \n", &p+1);
+
 }
 
 int main()
