@@ -11,6 +11,7 @@ int main()
 
 {
     int *tab100;
+
     alloue3(&tab100);
 
     if (tab100 == NULL)
