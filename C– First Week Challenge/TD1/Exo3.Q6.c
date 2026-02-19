@@ -5,7 +5,7 @@ typedef int tab100[100];
 int sommeRec(tab100 T, int i)
 {
 
-    if (i = 100)
+    if (i >= 100)
     {
         return 0;
     }
